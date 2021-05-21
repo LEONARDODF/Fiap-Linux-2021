@@ -1,1 +1,50 @@
 
+		### Respostas da WildCard ###
+
+Q2
+#!/bin/bash
+echo "cd /home/demo | cp * "file" /demo/work | ls /demo/work"
+resposta="Todos os arquivos contendo "file" foram copiados para dentro de /work"
+echo "A resposta correta é $resposta" 
+
+Q3
+#!/bin/bash
+echo "cp /demo/thismonth /demo/letters && mv thismonth let1.doc | cd /demo/letters && cp let1.doc let2.doc | cp let1.doc let3.doc"
+resposta="O arquivo thismonth foi movido e renomeado e foram criadas 3 cópias do mesmo arquivo"
+echo "A resposta correta é $resposta" 
+
+Q4
+#!/bin/bash
+echo "cp let1.doc,let2.doc,let3.doc /demo/work/misc | mv let1.doc rp1.doc && mv let2.doc rp2.doc && mv let3.doc rp3.doc"
+resposta="letters/let1.doc -> work/misc/rpt1.doc | letters/let2.doc -> work/misc/rpt2.doc | letters/let3.doc -> work/misc/rpt3.doc"
+echo "A resposta correta é $resposta" 
+  
+Q5
+#!/bin/bash
+echo "mv * "2","3" /demo/scripts"
+resposta="/work/misc não tem mais nenhum arquivo com 2 e 3"
+echo "A resposta correta é $resposta"
+
+Q6
+#!/bin/bash
+echo "rm * "^r""
+resposta="Todos os arquivos que começam com "r" foram movidos"
+echo "A resposta correta é $resposta"
+
+Q7
+#!/bin/bash
+echo "ln bigfile /home/demo/work/progs/biglink"
+resposta="Foi criado o biglink"
+echo "A resposta correta é $resposta"
+
+Q8
+#!/bin/bash
+echo "ln -s totheobject linkname"
+resposta="o arquivo linkname foi criado"
+echo "A resposta correta é $resposta"
+
+Q9
+#!/bin/bash
+echo "ln -s thismonth mylink2"
+resposta="O arquivo mylink2 foi criado"
+echo "A resposta correta é $resposta" 
