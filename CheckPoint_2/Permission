@@ -1,1 +1,49 @@
+        ### Respostas da Permission ###
 
+Q2
+#!/bin/bash
+echo "stat -c "%a %n" /home/demo/bigfile"
+resposta="644"
+echo "A resposta correta é $resposta" 
+
+Q3
+#!/bin/bash
+echo "ls -l bigfile"
+resposta="read"
+echo "A resposta correta é $resposta" 
+
+Q4
+#!/bin/bash
+echo "chmod 255"
+resposta="read execute"
+echo "A resposta correta é $resposta" 
+
+Q5
+#!/bin/bash
+echo "ls"
+resposta="Não consigo dar ls"
+echo "A resposta correta é $resposta"
+
+Q6
+#!/bin/bash
+echo "chmod o-rwx /scripts"
+resposta="Agora tenho permissão pra read/execute"
+echo "A resposta correta é $resposta" 
+
+Q7
+#!/bin/bash
+echo "ls"
+resposta="Consigo dar ls mas não consigo acessar os arquivos"
+echo "A resposta correta é $resposta" 
+
+Q8
+#!/bin/bash
+echo "chmod +x /scripts"
+resposta="Consigo ter acesso total"
+echo "A resposta correta é $resposta" 
+
+Q9
+#!/bin/bash
+echo "umask"
+resposta="022"
+echo "A resposta correta é $resposta"
