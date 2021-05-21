@@ -1,1 +1,43 @@
+      ### Respostas da Intro 2 ###
 
+Q2
+#!/bin/bash
+echo "mkdir work letters scripts; cd work; mkdir progs tutorial misc"
+resposta="as pastas foram criadas com sucesso."
+echo "A resposta correta é $resposta" 
+
+Q3
+#!/bin/bash
+echo "cp /etc/group works/misc"
+resposta="a pasta foi copiada."
+echo "A resposta correta é $resposta" 
+
+Q4
+#!/bin/bash
+echo "cd /misc | mv /vimrc /work/progs | cd /work/progs | ls"
+resposta="O arquivo vimrc está lá."
+echo "A resposta correta é $resposta" 
+
+Q5
+#!/bin/bash
+echo "ren /home/bigfile /home/bigfile2"
+resposta="O arquivo foi renomeado"
+echo "A resposta correta é $resposta" 
+
+Q6
+#!/bin/bash
+echo "cd /work | cp /home/bigfile2 /demo/scripts/"
+resposta="O diretório atual é work e o arquivo bigfile2 foi movido para a pasta scripts"
+echo "A resposta correta é $resposta" 
+
+Q7
+#!/bin/bash
+echo "cd ~mysql | pwd"
+resposta="/etc/mysql"
+echo "A resposta correta é $resposta" 
+
+Q8
+#!/bin/bash
+echo "mkdir gordon | mkdir Gordon | mkdir "My Documents" | ls /home"
+resposta="As pastas foram criadas"
+echo "A resposta correta é $resposta" 
