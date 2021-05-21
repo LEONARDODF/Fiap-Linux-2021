@@ -1,1 +1,85 @@
+		### Respostas do Pipe ###
+Q2
+#!/bin/bash
+echo "cat club_members names | sort > s1"
+resposta="cat & sort"
+echo "A resposta correta é $resposta" 
+
+Q3
+#!/bin/bash
+echo " cat club_members names | sort -r > s2"
+resposta="reverse sort"
+echo "A resposta correta é $resposta" 
+
+Q4
+#!/bin/bash
+echo "cat club_members | sort -n -k 5 > s3"
+resposta="sort por último"
+echo "A resposta correta é $resposta"
+
+Q5
+#!/bin/bash
+echo "cat club_members | sort -n -k 5 > s3"
+resposta="reverse sort"
+echo "A resposta correta é $resposta"
+
+Q6
+#!/bin/bash
+echo "cat /usr/share/dict/words | grep wta"
+resposta="swallowtail"
+echo "A resposta correta é $resposta"
+
+Q7
+#!/bin/bash
+echo "grep 'x' /usr/share/dict/words | wc –w"
+resposta="2130"
+echo "A resposta correta é $resposta"
+
+Q8
+#!/bin/bash
+echo "grep -n -v nologin /etc/passwd > s5"
+resposta="sem nologin"
+echo "A resposta correta é $resposta" 
+
+Q9
+#!/bin/bash
+echo "ls -l /etc | grep Aug > s6"
+resposta="ls & grep"
+echo "A resposta correta é $resposta" 
+
+Q10
+#!/bin/bash
+echo "ls -l /etc/ | sort -k 5,5 -nr | grep Jun > s7"
+resposta="Arquivos JUN em ordem"
+echo "A resposta correta é $resposta"
+
+Q11
+#!/bin/bash
+echo "find /var -user root > s8"
+resposta="Apache encontrado"
+echo "A resposta correta é $resposta" 
+
+Q12
+#!/bin/bash
+echo "find /etc -name *.conf > s9"
+resposta="arquivo .conf encontrado"
+echo "A resposta correta é $resposta"
+
+Q13
+#!/bin/bash
+echo "find /home/demo -newer s1 | tee /var/tmp/t1"
+resposta="Novos arquivos encontrado"
+echo "A resposta correta é $resposta"
+
+Q14
+#!/bin/bash
+echo "Find /etc/ -size +1024kb > s10"
+resposta="Achou arquivos que tem mais que 1024kb"
+echo "A resposta correta é $resposta" 
+
+Q15
+#!/bin/bash
+echo "Find /usr/include –type f –name ‘s*’ –size -25 –exec cp {} /home/demo/smallc \;"
+resposta="xml copiado"
+echo "A resposta correta é $resposta" 
 
